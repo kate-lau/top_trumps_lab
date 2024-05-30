@@ -16,18 +16,19 @@ import java.util.ArrayList;
 
         //Check Winner
 
-        public String checkWinner(ArrayList<Card> Cards){
+        public String checkWinner(ArrayList<Card> cards){
 
-            Card card  = null;
-            Card card2 = null;
+            Card card  = cards.get(0);
+            Card card2 = cards.get(1);
 
             if (card.getCardValue() < card2.getCardValue()) {
                 return String.format("%s of %s wins!", card2.getRank(), card2.getSuit());
-            } else {
+            } else if (card.getCardValue() > card2.getCardValue()){
                 return String.format("%s of %s wins!", card.getRank(), card.getSuit());
+            } else {
+                return "You draw!";
             }
 
     }
-
 
 }
