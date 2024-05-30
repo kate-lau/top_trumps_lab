@@ -1,5 +1,7 @@
 package com.example.top_trumps_start_code.models;
 
+import java.util.ArrayList;
+
 public class Card {
 
     private Rank rank;
@@ -11,6 +13,10 @@ public class Card {
     }
 
     public Card(){};
+
+    public static ArrayList<Card> getCardStatus() {
+        return null;
+    }
 
     public Rank getRank() {
         return rank;

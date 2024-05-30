@@ -5,8 +5,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-public class TopTrumpsService {
-
     @Service
     public class TopTrumpsService {
 
@@ -15,6 +13,8 @@ public class TopTrumpsService {
         public TopTrumpsService(){
 
         }
+
+        //Check Winner
 
         public String checkWinner(ArrayList<Card> Cards){
 
